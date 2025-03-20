@@ -151,17 +151,35 @@ header h1 {
 
 /* Tips carousel */
 #tips-carousel {
-    min-height: 80px;
+    min-height: 100px; /* Increased from 80px to ensure enough room */
+    position: relative;
+}
+
+#tips-carousel .carousel-inner {
+    min-height: 80px; /* Add fixed height for carousel inner */
 }
 
 #tips-carousel .carousel-item {
-    height: 60px;
+    height: 80px; /* Increased from 60px */
+    padding: 10px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#tips-carousel .carousel-item p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 100%;
+    white-space: normal;
+    overflow: hidden;
+}
+
 #tips-carousel .carousel-indicators {
+    position: relative;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 
@@ -181,11 +199,26 @@ header h1 {
 #tips-carousel .carousel-control-prev,
 #tips-carousel .carousel-control-next {
     width: 10%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    height: 30px;
+    top: 25px;
+    opacity: 0.7;
     color: #6c757d;
+}
+
+#tips-carousel .carousel-control-prev {
+    left: 5px;
+}
+
+#tips-carousel .carousel-control-next {
+    right: 5px;
 }
 
 #tips-carousel .carousel-control-prev-icon,
 #tips-carousel .carousel-control-next-icon {
+    width: 15px;
+    height: 15px;
     filter: invert(60%) sepia(10%) saturate(300%) hue-rotate(175deg) brightness(88%) contrast(90%);
 }
 
