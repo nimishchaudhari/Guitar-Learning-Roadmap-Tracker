@@ -150,11 +150,43 @@ header h1 {
 }
 
 /* Tips carousel */
+#tips-carousel {
+    min-height: 80px;
+}
+
 #tips-carousel .carousel-item {
-    height: 100px;
+    height: 60px;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    justify-content: center;
+}
+
+#tips-carousel .carousel-indicators {
+    margin-bottom: 0;
+}
+
+#tips-carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6c757d;
+    opacity: 0.5;
+    margin: 0 4px;
+}
+
+#tips-carousel .carousel-indicators button.active {
+    opacity: 1;
+}
+
+#tips-carousel .carousel-control-prev,
+#tips-carousel .carousel-control-next {
+    width: 10%;
+    color: #6c757d;
+}
+
+#tips-carousel .carousel-control-prev-icon,
+#tips-carousel .carousel-control-next-icon {
+    filter: invert(60%) sepia(10%) saturate(300%) hue-rotate(175deg) brightness(88%) contrast(90%);
 }
 
 /* Mobile responsiveness */
