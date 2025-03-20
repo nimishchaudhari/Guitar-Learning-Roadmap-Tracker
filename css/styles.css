@@ -1,0 +1,209 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-image: linear-gradient(to right, #212529, #343a40);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-weight: 700;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+/* Song cards */
+.song-card {
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.song-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.song-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0 0.25rem 0 0.25rem;
+}
+
+.status-not-started {
+    background-color: #6c757d;
+}
+
+.status-in-progress {
+    background-color: #fd7e14;
+}
+
+.status-completed {
+    background-color: #198754;
+}
+
+.song-difficulty {
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.difficulty-1 { color: #28a745; }
+.difficulty-2 { color: #17a2b8; }
+.difficulty-3 { color: #fd7e14; }
+.difficulty-4 { color: #dc3545; }
+
+.concepts-list {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.concept-tag {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    border-radius: 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* Progress bar styling */
+.progress {
+    height: 25px;
+    background-color: #e9ecef;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    background-color: #007bff;
+    font-weight: 600;
+}
+
+/* Tabs styling */
+.nav-tabs .nav-link {
+    color: #495057;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.tab-content {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Song detail modal */
+#songDetailModal .modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.technique-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.technique-item {
+    background-color: #e9ecef;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+}
+
+.progress-tracker {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Tips carousel */
+#tips-carousel .carousel-item {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .song-card .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .song-status {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+/* Completed song styling */
+.song-completed .card-body {
+    background-color: rgba(25, 135, 84, 0.1);
+}
+
+.song-in-progress .card-body {
+    background-color: rgba(253, 126, 20, 0.1);
+}
+
+/* Button hover effects */
+.btn {
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
