@@ -54,23 +54,38 @@
                         <h5 class="mb-0">Guitar Pro Tips</h5>
                     </div>
                     <div class="card-body">
-                        <div id="tips-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div id="tips-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <p><i class="fas fa-lightbulb text-warning me-2"></i> Use the <strong>Slow Down</strong> tool to learn difficult sections at a manageable pace.</p>
+                                    <p class="m-0"><i class="fas fa-lightbulb text-warning me-2"></i> Use the <strong>Slow Down</strong> tool to learn difficult sections at a manageable pace.</p>
                                 </div>
                                 <div class="carousel-item">
-                                    <p><i class="fas fa-lightbulb text-warning me-2"></i> <strong>Loop Sections</strong> to master challenging parts before moving on.</p>
+                                    <p class="m-0"><i class="fas fa-lightbulb text-warning me-2"></i> <strong>Loop Sections</strong> to master challenging parts before moving on.</p>
                                 </div>
                                 <div class="carousel-item">
-                                    <p><i class="fas fa-lightbulb text-warning me-2"></i> Use the <strong>Mixer</strong> to isolate the guitar track you're learning.</p>
+                                    <p class="m-0"><i class="fas fa-lightbulb text-warning me-2"></i> Use the <strong>Mixer</strong> to isolate the guitar track you're learning.</p>
                                 </div>
                                 <div class="carousel-item">
-                                    <p><i class="fas fa-lightbulb text-warning me-2"></i> Switch between <strong>Tab and Notation</strong> views to improve your music reading.</p>
+                                    <p class="m-0"><i class="fas fa-lightbulb text-warning me-2"></i> Switch between <strong>Tab and Notation</strong> views to improve your music reading.</p>
                                 </div>
                                 <div class="carousel-item">
-                                    <p><i class="fas fa-lightbulb text-warning me-2"></i> Practice with a <strong>metronome</strong> to improve your timing.</p>
+                                    <p class="m-0"><i class="fas fa-lightbulb text-warning me-2"></i> Practice with a <strong>metronome</strong> to improve your timing.</p>
                                 </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#tips-carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#tips-carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <div class="carousel-indicators position-relative mt-2">
+                                <button type="button" data-bs-target="#tips-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Tip 1"></button>
+                                <button type="button" data-bs-target="#tips-carousel" data-bs-slide-to="1" aria-label="Tip 2"></button>
+                                <button type="button" data-bs-target="#tips-carousel" data-bs-slide-to="2" aria-label="Tip 3"></button>
+                                <button type="button" data-bs-target="#tips-carousel" data-bs-slide-to="3" aria-label="Tip 4"></button>
+                                <button type="button" data-bs-target="#tips-carousel" data-bs-slide-to="4" aria-label="Tip 5"></button>
                             </div>
                         </div>
                     </div>
