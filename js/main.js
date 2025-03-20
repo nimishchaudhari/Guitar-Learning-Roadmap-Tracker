@@ -6,11 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Setup event listeners
     setupEventListeners();
-    
-    // Initialize tips carousel
-    let tipsCarousel = new bootstrap.Carousel(document.getElementById('tips-carousel'), {
-        interval: 5000
-    });
 });
 
 // Initialize the application
